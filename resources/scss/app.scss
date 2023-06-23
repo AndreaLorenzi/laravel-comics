@@ -1,11 +1,120 @@
 @import "~bootstrap/scss/bootstrap";
+// header
+header {
+    margin: auto;
+    width: 1200px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-body {
-    background-image: url("../img/picsum16.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    img {
+        width: 80%;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1.2rem;
+    }
+}
+// main
+
+// footer
+footer {
+    margin: auto;
+}
+.background {
+    background-color: #0282f9;
 }
 
-h1 {
-    color: red;
+.container-header {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        span {
+            font-size: 1rem;
+        }
+    }
+    img {
+        max-width: 50px;
+    }
+}
+
+.background-img {
+    background-image: url("../images/footer-bg.jpg");
+    height: 400px;
+    color: white;
+}
+
+.container-body {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        margin-top: 0.4rem;
+    }
+}
+.little {
+    font-size: 0.8rem;
+}
+
+.moar {
+    margin-top: 1rem;
+}
+.opacity-50 {
+    opacity: 50%;
+}
+.background-dc {
+    width: 785px;
+    height: 370px;
+    overflow: hidden;
+
+    img {
+        width: auto;
+        position: relative;
+        top: -120px;
+        right: -73px;
+    }
+}
+.background-gray {
+    background-color: #303030;
+    height: 109px;
+    color: white;
+    .container-footer {
+        width: 1100px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+            background-color: #303030;
+            border: 2px solid #0282f9;
+            color: white;
+            padding-inline: 1.5rem;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .follow-us {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            color: #0271c1;
+        }
+    }
 }
