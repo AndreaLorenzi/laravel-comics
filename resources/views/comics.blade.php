@@ -33,15 +33,23 @@
         <div class="background">
             <div class="jumbotron-bg"></div>
             <div class="container">
-              
-        
+                <div class="conteiner-comic d-flex flex-wrap">
+                        @foreach ($arrComics as $card)
+                        <div class="comic">
+                            <img src="{{ Vite::asset('../resources/images/dc-comics-detective.jpg')}}" alt="">
+                            <p>{{$card['series']}}</p>
+                            <p>{{$card['price']}}</p>
+                        </div>
+                    @endforeach
+                </div>
+                       
               <button class="current-series">CURRENT SERIES</button>
               <button class="load-more">LOAD MORE</button>
             </div>
           </div>
         {{-- footer --}}
         <footer>
-            <div class="background">
+            <div class="background-store">
                 <div class="container-header">
                   <div class="digital-comics">
                     <img class="size-img"  src="{{ Vite::asset('../resources/images/buy-comics-digital-comics.png') }}" alt="">
